@@ -27,13 +27,14 @@ body {
   z-index: 2;
   width: 100%;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, height 0.2s;
 }
 
 .navbar-light{
   background-color: #fff;
   color: #292D33;
   border-bottom: none;
+  height: 74px;
 }
 
 .navbar-light .header-logo-path {
