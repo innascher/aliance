@@ -345,7 +345,7 @@ margin-bottom: 9.375rem;
   }
   .header-nav{
     display: none;
-  }
+  }}
 
   .header-logo{
     display: flex;
@@ -370,6 +370,7 @@ margin-bottom: 9.375rem;
     height: 1px;
     background-color: #fff;
     width: 100%;
+    transition: transform 0.2s;
   }
 
   .mobile-menu-line:nth-child(2){
@@ -386,10 +387,6 @@ margin-bottom: 9.375rem;
   }
 
   .mobile-menu.is-open {
-    display: block;
-  }
-
-  .mobile-menu {
     display: block;
     position: fixed;
     top: 0;
@@ -473,6 +470,17 @@ margin-bottom: 9.375rem;
     gap: .625rem;
   }
 
+.close-menu .mobile-menu-line:nth-child(2) {
+  display: none;
+}
+
+.close-menu .mobile-menu-line:nth-child(1) {
+transform: rotate(45deg) translateY(15px);
+}
+
+.close-menu .mobile-menu-line:nth-child(3) {
+  transform: rotate(-45deg) translateY(-15px);
+  }
 
 
 
