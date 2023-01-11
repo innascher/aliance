@@ -46,7 +46,6 @@ body {
 }
 
 .header {
-  min-height: 100vh;
   padding-top: 5.875rem;
 }
 
@@ -177,10 +176,27 @@ button {
   color: #fff;
 }
 
-.header-features-item{
+.header-features-item {
   width: 18rem;
   padding: 1.125rem 3.125rem;
   border: 1px solid rgba(235, 235, 240, 0.2);
+  min-height: 100%;
+}
+
+.slider-btns {
+  display: flex;
+  height: 44px;
+}
+
+.slider-button-prev, 
+.slider-button-next {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-basis: 50%;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+  cursor: pointer;
 }
 
 .header-features-icon {
@@ -192,10 +208,6 @@ button {
   font-size: 1rem;
   line-height: 155%;
   margin-top: .9375rem;
-}
-
-.header-features-item:not(:last-child) {
-  border-right: none;
 }
 
 .section-light {
@@ -211,7 +223,22 @@ margin-bottom: 9.375rem;
   line-height: 100%;
 }
 
-.steps{
+.steps-btns {
+  display: none;
+  justify-content: flex-end;
+  height: 40px;
+}
+
+.steps-next-btn,
+.steps-prev-btn {
+  background: #5C8EE6;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps {
   list-style: none;
   display: flex;
   padding: 0;
@@ -305,6 +332,10 @@ margin-bottom: 9.375rem;
   html {
     font-size: 11px;
   }
+  .slider-button-prev, 
+  .slider-button-next {
+  display: flex;
+}
 }
 
 @media (max-width: 1243px) {
@@ -337,6 +368,9 @@ margin-bottom: 9.375rem;
   .header-nav{
     padding: 0 2rem;
   }
+  .steps-btns {
+    display: flex;
+  }
 }
 
 @media (max-width: 938px) {
@@ -356,6 +390,7 @@ margin-bottom: 9.375rem;
   .navbar-light .mobile-menu-line{
     background-color: #333;
   }
+
   .mobile-menu-toggle{
     width: 80px;
     height: 100%;
@@ -483,5 +518,44 @@ transform: rotate(45deg) translateY(15px);
   }
 
 
+  @media (max-width: 768px) {
+    .container {
+      max-width: 40rem;
+    }
+    .main-header {
+      font-size: 4rem;
+    }
+    .header-content {
+      padding-top: 3rem;
+    }
+    .steps-title {
+      font-size: 1.55rem;
+    }
+  }
 
- 
+  @media (max-width: 576px) {
+    .container {
+      max-width: 90%;
+    }
+    .main-header {
+      font-size: 3rem;
+    }
+    .header-content {
+      padding-top: 2rem;
+    }
+  }
+
+  @media (max-width: 300px) {
+    .navbar {
+      height: 4rem;
+    }
+    .mobile-menu-toggle{
+      width: 55px;
+    }
+
+    .logo-svg {
+      width: 8rem;
+    } 
+
+}
+  

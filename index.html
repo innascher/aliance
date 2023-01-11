@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Aliance Production</title>
 </head>
@@ -49,12 +50,12 @@
 
     <div class="mobile-info">
       <div class="mobile-info-item"><img src="img/icons/geo.svg" alt="geo">
-      <span>г. Москва, Холодильный пер. 4к1с8</span>
+        <span>г. Москва, Холодильный пер. 4к1с8</span>
       </div>
 
       <div class="mobile-info-item">
-      <img src="img/icons/mail.svg" alt="mail">
-      <span>a.dragunov@tdaliance.ru</span>
+        <img src="img/icons/mail.svg" alt="mail">
+        <span>a.dragunov@tdaliance.ru</span>
       </div>
     </div>
 
@@ -129,8 +130,9 @@
     </div>
     <button class="nav-btn btn">
       <svg class="btn-svg" width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15.9688 12.0822L15.2188 15.2384C15.125 15.7072 14.75 16.0197 14.2812 16.0197C6.40625 15.9884 0 9.58218 0 1.70718C0 1.23843 0.28125 0.86343 0.75 0.76968L3.90625 0.0196803C4.34375 -0.0740697 4.8125 0.17593 5 0.58218L6.46875 3.98843C6.625 4.39468 6.53125 4.86343 6.1875 5.11343L4.5 6.48843C5.5625 8.64468 7.3125 10.3947 9.5 11.4572L10.875 9.76968C11.125 9.45718 11.5938 9.33218 12 9.48843L15.4062 10.9572C15.8125 11.1759 16.0625 11.6447 15.9688 12.0822Z"/>
-        </svg>
+        <path
+          d="M15.9688 12.0822L15.2188 15.2384C15.125 15.7072 14.75 16.0197 14.2812 16.0197C6.40625 15.9884 0 9.58218 0 1.70718C0 1.23843 0.28125 0.86343 0.75 0.76968L3.90625 0.0196803C4.34375 -0.0740697 4.8125 0.17593 5 0.58218L6.46875 3.98843C6.625 4.39468 6.53125 4.86343 6.1875 5.11343L4.5 6.48843C5.5625 8.64468 7.3125 10.3947 9.5 11.4572L10.875 9.76968C11.125 9.45718 11.5938 9.33218 12 9.48843L15.4062 10.9572C15.8125 11.1759 16.0625 11.6447 15.9688 12.0822Z" />
+      </svg>
       <span class="btn-text">Получить консультацию</span>
     </button>
   </nav>
@@ -145,29 +147,40 @@
           паттернов поведения.</p>
         <button class="header-btn">Подробнее о компании</button>
       </div>
+      <div class="swiper">
+        <ul class="swiper-wrapper header-features">
+          <li class="swiper-slide header-features-item">
+            <img src="img/icons/icon1.svg" alt="" class="header-features-icon">
+            <p class="header-features-text">Непрерывная работа c 2017 года</p>
+          </li>
+          <li class="swiper-slide header-features-item">
+            <img src="img/icons/icon2.svg" alt="" class="header-features-icon">
+            <p class="header-features-text">Вся продукция сертифицирована</p>
+          </li>
+          <li class="swiper-slide header-features-item">
+            <img src="img/icons/icon3.svg" alt="" class="header-features-icon">
+            <p class="header-features-text">Контроль качества на всех этапах</p>
+          </li>
+          <li class="swiper-slide header-features-item">
+            <img src="img/icons/icon4.svg" alt="" class="header-features-icon">
+            <p class="header-features-text">Поставки по всей России</p>
+          </li>
+          <li class="swiper-slide header-features-item">
+            <img src="img/icons/icon5.svg" alt="" class="header-features-icon">
+            <p class="header-features-text">Оперативное производство</p>
+          </li>
+        </ul>
 
-      <ul class="header-features">
-        <li class="header-features-item">
-          <img src="img/icons/icon1.svg" alt="" class="header-features-icon">
-          <p class="header-features-text">Непрерывная работа c 2017 года</p>
-        </li>
-        <li class="header-features-item">
-          <img src="img/icons/icon2.svg" alt="" class="header-features-icon">
-          <p class="header-features-text">Вся продукция сертифицирована</p>
-        </li>
-        <li class="header-features-item">
-          <img src="img/icons/icon3.svg" alt="" class="header-features-icon">
-          <p class="header-features-text">Контроль качества на всех этапах</p>
-        </li>
-        <li class="header-features-item">
-          <img src="img/icons/icon4.svg" alt="" class="header-features-icon">
-          <p class="header-features-text">Возможны поставки по всей России</p>
-        </li>
-        <li class="header-features-item">
-          <img src="img/icons/icon5.svg" alt="" class="header-features-icon">
-          <p class="header-features-text">Оперативное производство</p>
-        </li>
-      </ul>
+        <div class="slider-btns">
+          <div class="slider-button-prev">
+            <img src="img/icons/arrow-prev.svg" alt="previous">
+          </div>
+          <div class="slider-button-next">
+            <img src="img/icons/arrow-next.svg" alt="next">
+          </div>
+        </div>
+
+      </div>
     </div>
   </header>
 
@@ -176,37 +189,48 @@
       <div class="separator"></div>
       <h2 class="section-title">схема работы</h2>
 
-      <ol class="steps">
-        <li class="steps-item">
-          <span class="steps-num">01</span>
-          <h3 class="steps-title">Знакомство</h3>
-          <p class="steps-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм
-            воздействия.</p>
-          <a href="#" class="steps-link">Оставить заявку</a>
-        </li>
-        <li class="steps-item">
-          <span class="steps-num">02</span>
-          <h3 class="steps-title">Заключение договора</h3>
-          <p class="steps-text">Лишь интерактивные прототипы призваны к ответу.</p>
-        </li>
-        <li class="steps-item">
-          <span class="steps-num">03</span>
-          <h3 class="steps-title">Производство</h3>
-          <p class="steps-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально
-            разнесены на независимые элементы.</p>
-        </li>
-        <li class="steps-item">
-          <span class="steps-num">04</span>
-          <h3 class="steps-title">Доставка</h3>
-          <p class="steps-text">В частности, экономическая повестка сегодняшнего дня говорит о возможностях
-            приоритизации разума над эмоциями.</p>
-        </li>
-      </ol>
+      <div class="swiper steps-swiper">
+        <ol class="swiper-wrapper steps">
+          <li class="swiper-slide steps-item">
+            <span class="steps-num">01</span>
+            <h3 class="steps-title">Знакомство</h3>
+            <p class="steps-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм
+              воздействия.</p>
+            <a href="#" class="steps-link">Оставить заявку</a>
+          </li>
+          <li class="swiper-slide steps-item">
+            <span class="steps-num">02</span>
+            <h3 class="steps-title">Заключение договора</h3>
+            <p class="steps-text">Лишь интерактивные прототипы призваны к ответу.</p>
+          </li>
+          <li class="swiper-slide steps-item">
+            <span class="steps-num">03</span>
+            <h3 class="steps-title">Производство</h3>
+            <p class="steps-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально
+              разнесены на независимые элементы.</p>
+          </li>
+          <li class="swiper-slide steps-item">
+            <span class="steps-num">04</span>
+            <h3 class="steps-title">Доставка</h3>
+            <p class="steps-text">В частности, экономическая повестка сегодняшнего дня говорит о возможностях
+              приоритизации разума над эмоциями.</p>
+          </li>
+        </ol>
 
-
+        <div class="steps-btns">
+          <div class="steps-prev-btn">
+            <img width="30px" height="20px" src="img/icons/arrow-prev.svg" alt="previous">
+          </div>
+          <div class="steps-next-btn">
+            <img width="30px" height="20px" src="img/icons/arrow-next.svg" alt="next">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
