@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Aliance Production</title>
 </head>
@@ -29,7 +30,7 @@
           <li class="submenu-item"><a class="submenu-item" href="#">Дезинфицирующие средства</a></li>
           <li class="submenu-item"><a class="submenu-item" href="#">Пищевые аэрозоли</a></li>
           <li class="submenu-item"><a class="submenu-item" href="#">Косметическая продукция</a></li>
-          <li class="submenu-item"><a hclass="submenu-item" ref="#">Краски аэрозольные</a></li>
+          <li class="submenu-item"><a class="submenu-item" href="#">Краски аэрозольные</a></li>
         </ul>
       </li>
       <li class="mobile-menu-nav-item">
@@ -147,7 +148,8 @@
           паттернов поведения.</p>
         <button class="header-btn">Подробнее о компании</button>
       </div>
-      <div class="swiper">
+
+      <div class="swiper features-slider">
         <ul class="swiper-wrapper header-features">
           <li class="swiper-slide header-features-item">
             <img src="img/icons/icon1.svg" alt="" class="header-features-icon">
@@ -189,7 +191,7 @@
       <div class="separator"></div>
       <h2 class="section-title">схема работы</h2>
 
-      <div class="swiper steps-swiper">
+      <div class="swiper steps-slider">
         <ol class="swiper-wrapper steps">
           <li class="swiper-slide steps-item">
             <span class="steps-num">01</span>
@@ -219,13 +221,160 @@
 
         <div class="steps-btns">
           <div class="steps-prev-btn">
-            <img width="30px" height="20px" src="img/icons/arrow-prev.svg" alt="previous">
+            <img width="30" height="20" src="img/icons/arrow-prev.svg" alt="previous">
           </div>
           <div class="steps-next-btn">
-            <img width="30px" height="20px" src="img/icons/arrow-next.svg" alt="next">
+            <img width="30" height="20" src="img/icons/arrow-next.svg" alt="next">
           </div>
         </div>
+
       </div>
+    </div>
+  </section>
+
+  <section class="section production">
+    <div class="container">
+      <div class="separator"></div>
+      <h2 class="section-title">контрактное производство</h2>
+      <div class="cards">
+
+        <!-- пробная Bootstrap -->
+        <!-- <div class="row cards-row">
+          <div class="col-xl-4">
+            <div class="card">
+              <div class="card-content">
+              <h3 class="card-title">Автомобильная химия</h3>
+              <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
+              </div>
+              <img class="card-img" width="454" src="img/avto-him.png" alt="avto-him">
+            </div>
+
+            <div class="card">
+              <div class="card-content">
+                <h3 class="card-title">Пищевые аэрозоли</h3>
+                <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
+              </div>
+              <img class="card-img" src="img/dezinfect.png" alt="dezinfect">
+            </div> 
+          </div>
+
+          <div class="col-xl-4">
+            <div class="card">
+              <div class="card-content">
+                <h3 class="card-title">Бытовая химия</h3>
+                <p class="card-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
+              </div>
+                <img class="card-img" src="img/bit-him.png" alt="bit-him">
+            </div>  
+
+            <div class="card">
+              <div class="card-content">
+                <h3 class="card-title">Косметическая продукция</h3>
+                <p class="card-text">Лишь интерактивные прототипы призваны к ответу.</p>
+              </div>
+              <img class="card-img" src="img/bit-him.png" alt="bit-him">
+            </div>
+          </div>  
+          <div class="col-xl-4">
+            <div class="card">
+              <div class="card-content">
+                <h3 class="card-title">Дезинфицирующие средства</h3>
+                <p class="card-text">Лишь интерактивные прототипы призваны к ответу.</p>
+              </div>
+              <img class="card-img" src="img/dezinfect.png" alt="dezinfect">
+            </div>
+
+            <div class="card">
+              <div class="card-content">
+                <h3 class="card-title">Краски аэрозольные</h3>
+                <p class="card-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
+              </div>
+              <img class="card-img" src="img/avto-him.png" alt="avto-him">
+            </div>
+          </div>            
+      </div>   -->
+        <a href="#" class="card">
+          <div class="card-content">
+            <h3 class="card-title">Автомобильная химия</h3>
+            <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм
+              воздействия.</p>
+          </div>
+          <img class="card-img" src="img/avto-him.png" alt="avto-him">
+        </a>
+
+        <a href="#" class="card">
+          <div class="card-content">
+            <h3 class="card-title">Бытовая химия</h3>
+            <p class="card-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально
+              разнесены на независимые элементы.</p>
+          </div>
+          <img class="card-img" src="img/bit-him.png" alt="bit-him">
+        </a>
+
+        <a href="#" class="card">
+          <div class="card-content">
+            <h3 class="card-title">Дезинфицирующие средства</h3>
+            <p class="card-text">Лишь интерактивные прототипы призваны к ответу.</p>
+          </div>
+          <img class="card-img" src="img/dezinfect.png" alt="dezinfect">
+        </a>
+
+        <a href="#" class="card">
+          <div class="card-content">
+            <h3 class="card-title">Пищевые аэрозоли</h3>
+            <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм
+              воздействия.</p>
+          </div>
+          <img class="card-img" src="img/dezinfect.png" alt="dezinfect">
+        </a>
+
+        <a href="#" class="card">
+          <div class="card-content">
+            <h3 class="card-title">Косметическая продукция</h3>
+            <p class="card-text">Лишь интерактивные прототипы призваны к ответу.</p>
+          </div>
+          <img class="card-img" src="img/bit-him.png" alt="bit-him">
+        </a>
+
+        <a href="#" class="card">
+          <div class="card-content">
+            <h3 class="card-title">Краски аэрозольные</h3>
+            <p class="card-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально
+              разнесены на независимые элементы.</p>
+          </div>
+          <img class="card-img" src="img/avto-him.png" alt="avto-him">
+      </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="marks">
+    <div class="container">
+      <div class="separator"></div>
+      <h2 class="section-title">собственные торговые марки</h2>
+
+      <div class="marks-cards">
+
+        <a href="#" class="marks-card">
+          <img class="marks-img" src="img/icons/AGTECH.png" alt="Автохимия AG-Tech">
+          <div class="marks-card-content">
+            <h4 class="marks-title">Автохимия AG-Tech</h4>
+            <p class="marks-text">Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для поставленных обществом задач.</p>
+          </div>
+        </a>
+
+        <a href="#" class="marks-card">
+          <img class="marks-img" src="img/icons/AP.png" alt="Автохимия AP">
+          <div class="marks-card-content">
+            <h4 class="marks-title">Автохимия AP</h4>
+            <p class="marks-text">Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление
+              создаёт
+              предпосылки для поставленных обществом задач.</p>
+          </div>
+        </a>
+
+      </div>
+
     </div>
   </section>
 
