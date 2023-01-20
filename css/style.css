@@ -442,7 +442,9 @@ margin-bottom: 6rem;
   z-index: 0;
 }
 
-.marks {
+/* Без Grid */
+
+/* .marks {
   margin-top: 7.375rem;
   margin-bottom: 9.375rem;
 }
@@ -492,6 +494,61 @@ margin-bottom: 6rem;
 
 .marks-img {
   width: 30%;
+} */
+
+.marks {
+  margin-top: 7.375rem;
+  margin-bottom: 9.375rem;
+}
+
+.marks-cards {
+  display: flex;
+}
+
+.marks-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+  "logo title title"
+  "logo text text";
+  flex-basis: 50%;
+  padding: 3.125rem;
+  text-decoration: none;
+  border: 1px solid #EBEBF0;
+  transition: border 0.2s;
+  grid-column-gap: 3.125rem;
+}
+
+.marks-img {
+  grid-area: logo;
+  width: 100%;
+}
+
+.marks-title {
+grid-area: title;
+margin: 0;
+font-weight: 400;
+font-size: 1.75rem;
+line-height: 160%;
+color: #292D33;
+transition: color 0.2s
+}
+
+.marks-text {
+  grid-area: text;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828A99;
+}
+
+.marks-card:hover {
+  border: 1px solid #5C8EE6;
+}
+
+.marks-card:hover .marks-title {
+  color: #5C8EE6;
 }
 
 
@@ -583,6 +640,11 @@ margin-bottom: 6rem;
   .steps {
     gap: 1rem;
   }
+
+  .marks-card {
+    padding: 2.125rem;
+  }
+
 }
 
 @media (max-width: 938px) {
@@ -735,6 +797,23 @@ transform: rotate(45deg) translateY(15px);
   .marks-card { 
     flex-basis: 100%;
   }
+
+  .marks-card {
+    padding: 2.125rem;
+  }
+
+  .marks-text {
+    font-size: 1.3rem;
+  }
+
+  .marks-title{
+    font-size: 1.9rem;
+  }
+
+  .marks-cards {
+    flex-direction: column;
+  }
+
 }
 
   @media (max-width: 768px) {
@@ -755,6 +834,15 @@ transform: rotate(45deg) translateY(15px);
       flex-basis: 100%;
     }
 
+    .marks-text {
+    font-size: 1rem;
+    }
+
+    .marks-title {
+      font-size: 1.6rem;
+    }
+
+
   }
 
   @media (max-width: 576px) {
@@ -762,7 +850,7 @@ transform: rotate(45deg) translateY(15px);
       max-width: 90%;
     }
     .main-header {
-      font-size: 3rem;
+      font-size: 4rem;
     }
     .header-content {
       padding-top: 2rem;
@@ -779,7 +867,37 @@ transform: rotate(45deg) translateY(15px);
     .steps {
       gap: .25rem;
     }
+
+    .marks-card {
+      grid-template-areas: "logo title title" "text text text";
+    }
   }
+
+  
+  @media (max-width: 435px) {
+    .marks-card{
+      gap: 1.125rem;
+      padding: 1.125rem;
+    }
+
+    .marks-title{
+      margin-bottom: 0px;
+      font-size: 1.3rem;
+    }
+
+    .marks-text{
+      font-size: .9rem;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .card{
+    min-height: 34.0625rem;
+    }  
+  }
+  
+
+  
 
   @media (max-width: 300px) {
     .navbar {
@@ -793,5 +911,28 @@ transform: rotate(45deg) translateY(15px);
       width: 8rem;
     } 
 
+  .marks-card {
+    padding: 1.125rem;
+  }
+
+  .marks-text{
+    font-size: .7rem;
+  }
+
+  .marks-title {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    min-height: 31.0625rem;
+  }
+
+  .marks-section-title {
+    font-size: 3.5rem;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
 }
   
