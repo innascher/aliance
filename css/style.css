@@ -318,7 +318,7 @@ margin-bottom: 6rem;
   margin-bottom: 1.25rem;
 }
 
-.steps-link {
+.btn-link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -328,7 +328,7 @@ margin-bottom: 6rem;
   color: #5C8EE6;
 }
 
-.steps-link::before {
+.btn-link::before {
   content: "";
   height: .0625rem;
   width: 2.5rem;
@@ -337,7 +337,7 @@ margin-bottom: 6rem;
   transition: width 0.2s;
 }
 
-.steps-link:hover:before {
+.btn-link:hover:before {
   width: 3.75rem;
 }
 
@@ -551,6 +551,86 @@ transition: color 0.2s
   color: #5C8EE6;
 }
 
+.founder {
+ position: relative;
+ min-height: 41.25rem;
+}
+
+.founder-img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-content{
+  max-width: 45rem;
+}
+
+.founder-content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.founder-text {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828A99;
+  margin-bottom: 1.5625rem;
+}
+
+.clients {
+  margin-top: 7.375rem;
+}
+
+.clients-wrapper{
+  display: flex;
+  gap: 3.125rem;
+}
+
+.clients-content{
+  flex-basis: 50%
+}
+
+.clients-list {
+  list-style: none;
+  padding: 0;
+  columns: 2 auto;
+}
+
+.clients-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #292D33;
+}
+
+.clients-logo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 10;
+}
+
+.client-logo-item {
+  flex-basis: 33%;
+  border: 1px solid #EBEBF0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.client-logo-img {
+  max-width: 100%;
+}
+
 
 
 @media (max-width: 1750px) {
@@ -613,6 +693,10 @@ transition: color 0.2s
   .marks-text {
     font-size: .875rem;
   }
+
+  .founder-content{
+    max-width: 42rem;
+  }
 }
 
 @media (max-width: 1214px) {
@@ -645,6 +729,20 @@ transition: color 0.2s
     padding: 2.125rem;
   }
 
+  .clients-content {
+    flex-basis: 60%;
+  }
+
+  .clients-wrapper{
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 1056px) {
+  .founder-content{
+    max-width: 39rem;
+  }
 }
 
 @media (max-width: 938px) {
@@ -814,6 +912,22 @@ transform: rotate(45deg) translateY(15px);
     flex-direction: column;
   }
 
+  .founder-img {
+    width: 100%;
+    position: relative;
+    margin-bottom: 3.125rem;
+  }
+
+  .founder-content {
+    max-width: 55rem;
+  }
+
+  
+.founder-text {
+  font-size: 1.5rem;
+}
+
+
 }
 
   @media (max-width: 768px) {
@@ -870,6 +984,18 @@ transform: rotate(45deg) translateY(15px);
 
     .marks-card {
       grid-template-areas: "logo title title" "text text text";
+    }
+
+    .founder-text {
+    font-size: 1.2rem;
+    }
+
+    .clients-list {
+      columns: 1;
+    }
+
+    .client-logo-item {
+      flex-basis: 50%;
     }
   }
 
