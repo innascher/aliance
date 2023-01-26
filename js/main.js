@@ -79,7 +79,34 @@ breakpoints: {
   1243: {
     slidesPerView: 3,
   },
+  1920: {
+    slidesPerView: 3,
+  },
 }
+});
+
+const swiperBlog = new Swiper('.blog-slider', {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.blog-btn-next',
+    prevEl: '.blog-btn-prev',
+},
+
+  // breakpoints: {
+  // 768: {
+  //   slidesPerView: 1,
+  // },
+
+  // 1920: {
+  //   slidesPerView: 2,
+  // },
+
+
+// } 
+
+
+
 });
 
   
