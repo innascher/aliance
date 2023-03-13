@@ -1050,6 +1050,8 @@ input {
 }
 
 
+/* Первый вариант */
+
 .header-inner-page {
   background: #F0F2F5;
   padding-top: 9.25rem;
@@ -1104,6 +1106,49 @@ color: #828A99;
   right: 0;
   bottom: 0;
 }
+
+
+
+.ip-experts{
+  background-color: #FAFBFC;
+  padding-bottom: 9.375rem;
+}
+
+.ip-experts-img {
+  display: block;
+}
+
+.ip-experts-content {
+  display: flex;
+  padding-top: 6.25rem;
+  gap: 6.875rem;
+}
+
+.ip-experts-text {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828A99;
+  margin-top: 0;
+}
+
+.ip-header-features-text {
+  color: #292D33;
+}
+
+.ip-header-features-item{
+  border: 1px solid rgba(235, 235, 240);
+  flex-shrink: 1;
+}
+
+.ip-slider-button-prev,
+.ip-slider-button-next {
+  border: 1px solid rgba(235, 235, 240);
+}
+
+
+
 
 
 

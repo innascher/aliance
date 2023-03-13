@@ -165,6 +165,111 @@
   </div>
 
 
+  <section class="ip-experts">
+    <div class="container">
+      <div class="ip-experts-content">
+        <img src="img/about1.png" alt="" class="ip-experts-img">
+        <div class="ip-expers-text-wrapper">
+        <div class="separator"></div>
+        <h2 class="section-title">мы - эксперты в области производства химии</h2>
+        <p class="ip-experts-text">
+          Разнообразный и богатый опыт говорит нам, что перспективное планирование однозначно фиксирует необходимость
+          поставленных обществом задач! Есть над чем задуматься: ключевые особенности структуры проекта могут быть
+          объединены в целые кластеры себе подобных. Интерактивные прототипы, которые представляют собой яркий пример
+          континентально-европейского типа политической культуры, будут описаны максимально подробно. Значимость этих
+          проблем настолько очевидна, что перспективное планирование играет важную роль в формировании системы массового
+          участия.
+        </p>
+        </div>
+      </div>
+
+      <div class="swiper ip-features-slider">
+        <ul class="swiper-wrapper header-features">
+          <li class="swiper-slide header-features-item ip-header-features-item">
+            <img src="img/icons/icon1.svg" alt="" class="header-features-icon">
+            <p class="header-features-text ip-header-features-text">Непрерывная работа c 2017 года</p>
+          </li>
+          <li class="swiper-slide ip-header-features-item header-features-item">
+            <img src="img/icons/icon2.svg" alt="" class="header-features-icon">
+            <p class="header-features-text ip-header-features-text">Вся продукция сертифицирована</p>
+          </li>
+          <li class="swiper-slide ip-header-features-item header-features-item">
+            <img src="img/icons/icon3.svg" alt="" class="header-features-icon">
+            <p class="header-features-text ip-header-features-text">Контроль качества на всех этапах</p>
+          </li>
+          <li class="swiper-slide ip-header-features-item header-features-item">
+            <img src="img/icons/icon4.svg" alt="" class="header-features-icon">
+            <p class="header-features-text ip-header-features-text">Поставки по всей России</p>
+          </li>
+          <li class="swiper-slide ip-header-features-item header-features-item">
+            <img src="img/icons/icon5.svg" alt="" class="header-features-icon">
+            <p class="header-features-text ip-header-features-text">Оперативное производство</p>
+          </li>
+        </ul>
+
+        <div class="slider-btns">
+          <div class="ip-slider-button-prev slider-button-prev">
+            <img src="img/icons/blackarrow1.png" alt="previous">
+          </div>
+          <div class="ip-slider-button-next slider-button-prev">
+            <img src="img/icons/blackarrow2.png" alt="next">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+    <section class="ip-production">
+      <div class="container">
+      <div class="ip-production-text-wrapper">
+      <div class="separator"></div>
+      <h2 class="section-title">Наше производство</h2>
+      <p class="ip-production-text">
+      Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает широкому кругу (специалистов) участие в формировании глубокомысленных рассуждений. Но граница обучения кадров создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса кластеризации усилий.
+      Реализация намеченных плановых заданий, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня требует анализа анализа существующих паттернов поведения.
+      </p>
+      <ul class="ip-production-list">
+        <li class="ip-production-list-item">
+          <img src="img/icons/production-car.png" alt="" class="ip-production-list-img">
+          Автомобильная химия
+        </li>
+        <li class="ip-production-list-item">
+          <img src="img/icons/production-home.png" alt="" class="ip-production-list-img">
+          Бытовая химия
+        </li>
+        <li class="ip-production-list-item">
+          <img src="img/icons/production-aerozol.png" alt="" class="ip-production-list-img">
+          Дезинфицирующие средства
+        </li>
+        <li class="ip-production-list-item">
+          <img src="img/icons/production-cosmetic.png" alt="" class="ip-production-list-img">
+          Пищевые аэрозоли
+        </li>
+        <li class="ip-production-list-item">
+          <img src="img/icons/production-dis.png" alt="" class="ip-production-list-img">
+          Косметическая продукция
+        </li>
+        <li class="ip-production-list-item">
+          <img src="img/icons/production-brush.png" alt="" class="ip-production-list-img">
+          Краски аэрозольные
+        </li>
+      </ul>
+      </div>
+
+      <img src="img/production.jpg" alt="production">
+
+
+      </div>
+     </section>
+
+
+
+
+
+
   <?php include_once('founder.php')?>
 
   <?php include_once('clients.php')?>
