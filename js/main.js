@@ -168,7 +168,6 @@ document.addEventListener ("keyup", (event) => {
 
 
 
-
 // const modalToggle = document.querySelectorAll("[data-toggle=modal]");
 // const modalClose = document.querySelector(".modal-close")
 // console.log(modalToggle);
@@ -185,34 +184,34 @@ document.addEventListener ("keyup", (event) => {
 //   modal.classList.remove("is-open");
 // });
 
-const forms = document.querySelectorAll("form");
-forms.forEach((form) => {
-  const validation = new JustValidate (form, {
-  errorFieldCssClass: "is-invalid",
-});
 
-validation
-  .addField("[name=username]", [
-    {
-      rule: 'minLength',
-      value: 3,
-    },
-    {
-      rule: 'maxLength',
-      value: 30,
-    },
-  ])
-  .addField("[name=userphone]", [
-    {
-      rule: 'required',
-      errorMessage: 'Field is required',
-    },
-    {
-      rule: 'email',
-      errorMessage: 'Email is invalid!',
-    },
-  ])
+// ВАЛИДАЦИЯ ФОРМЫ (не работает)
 
-});
+// const forms = document.querySelectorAll("form");
+// forms.forEach((form) => {
+//   const validation = new JustValidate (form, {
+//   errorFieldCssClass: "is-invalid",
+// });
+
+// validation
+//   .addField("[name=username]", [
+//     {
+//       rule: 'required',
+//       errorMessage: 'Укажите имя',
+//     },
+//     {
+//       rule: 'maxLength',
+//       value: 50,
+//     },
+//   ])
+//   .addField("[name=userphone]", [
+//     {
+//       rule: 'required',
+//       errorMessage: 'Field is required',
+//       errorMessage: 'Укажите имя',
+//     },
+//   ])
+
+// });
 
   

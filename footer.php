@@ -15,18 +15,19 @@
               class="input" 
               placeholder=" "
               required
-              maxlenght="100"
+              maxlenght="30"
               >
               <label class="input-label" for="username">Имя</label>
             </div>
             <div class="input-group">
               <input 
-              id="user-phone"
+              id="userphone"
               type="tel"
               name="userphone"
               class="input" 
-              placeholder=" ">
-              <label class="input-label" for="user-phone">Телефон</label>
+              placeholder=" "
+              >
+              <label class="input-label" for="userphone">Телефон</label>
             </div>
           </div>
 
@@ -157,17 +158,23 @@
             type="text" 
             class="input modal-input" 
             placeholder=" "
-            name="username">
+            name="username"
+            required
+            maxlenght="30"
+            >
             <label class="input-label modal-input-label" for="modal-username">Имя</label>
           </div>
           <div class="input-group modal-input-group">
-            <input id="modal-user-phone" 
+            <input 
+            id="modal-userphone" 
             type="tel" 
             class="input modal-input" 
             placeholder=" "
             name="userphone"
+            required
+            maxlenght="30"
             >
-            <label class="input-label modal-input-label" for="modal-user-phone">Телефон</label>
+            <label class="input-label modal-input-label" for="modal-userphone">Телефон</label>
           </div>
         </div>
 
@@ -189,7 +196,7 @@
 
 
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/just-validate.production.min.js"></script>
+  <!-- <script src="js/just-validate.production.min.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 
